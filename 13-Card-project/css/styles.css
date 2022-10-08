@@ -94,6 +94,26 @@ white-space: nowrap;
     margin: 1rem;
     text-align: center;
 }
+
+.card p {
+    position: relative;
+}
+
+.card p::before {
+    content: open-quote;
+    position: absolute;
+    font-size: 3rem;
+    top: -0.25em;
+    left: -0.5em;
+}
+
+.card p::after {
+    content: close-quote;
+    position: absolute;
+    font-size: 3rem;
+    top: -0.25em;
+    right: -.5em;
+}
 .footer {
     bottom: 0;
 }
